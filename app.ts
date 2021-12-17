@@ -1,3 +1,1 @@
-const message = '⚡ Hello, World!'
-
-console.log(message)
+console.log(Deno.env.get('message'))
