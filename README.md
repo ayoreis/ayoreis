@@ -1,6 +1,5 @@
 # Hello, world! <br/> I am Ayo, <br/> I  make stuff.
 
-## Tech stack:
 - 🦕 [Deno](//deno.land) & [Deno Deploy](//deno.com/deploy)
 - 📘 [Typescript](//typescriptlang.org)
 - ⚛️ [React](//reactjs.org)
