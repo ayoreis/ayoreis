@@ -1,6 +1,16 @@
-### Hi there 👋
+# Hello, world! <br/> I am Ayo, <br/> I  make stuff.
+
+## Tech stack:
+- 🦕 [Deno](//deno.land) & [Deno Deploy](//deno.com/deploy)
+- 📘 [Typescript](//typescriptlang.org)
+- ⚛️ [React](//reactjs.org)
+    - 🗄️ [SSR](//reactjs.org/docs/react-dom-server.html)
+    - 🛣️ [Router](//reactrouter.com)
+    - 🪖 [Helmet](//github.com/nfl/react-helmet)
+- 🐿️ [Oak](//deno.land/x/oak)
 
 <!--
+
 **ayoreis/ayoreis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -12,5 +22,4 @@ Here are some ideas to get you started:
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- ⚡ Fun fact: ... -->
