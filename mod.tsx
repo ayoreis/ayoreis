@@ -76,7 +76,7 @@ async function bundle(path: string | URL): Promise<string> {
 
 
 // 📦 Bundle
-// In a try-catch block to prevent the Deno Deploy from crashing
+// In a try-catch block to prevent Deno Deploy from crashing
 
 try {
     Deno.writeTextFile('./public/script.js', await bundle('./public/script.tsx'))
@@ -91,7 +91,7 @@ app.use(async (context, next) => {
     console.log(`${context.request.method} ${context.request.url.pathname}`)
 })
 
-app.use(staticFiles('public'))
+// app.use(staticFiles('public'))
 
 
 router.get('/api', async context => {
