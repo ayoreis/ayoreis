@@ -76,8 +76,11 @@ async function bundle(path: string | URL): Promise<string> {
 
 
 // 📦 Bundle
+// In a try-catch block to prevent the Deno Deploy from crashing
 
-Deno.writeTextFile('./public/script.js', await bundle('./public/script.tsx'))
+try {
+    Deno.writeTextFile('./public/script.js', await bundle('./public/script.tsx'))
+} catch {} 
 
 
 // 🚀 Server
