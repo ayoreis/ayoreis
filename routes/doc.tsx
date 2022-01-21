@@ -15,7 +15,7 @@ function Document() {
                 <title>Document</title>
                 <script defer type="module" src="script.js"></script>
                 <link rel="stylesheet" href="/styles.css" />
-                <script async src="https://cdn.splitbee.io/sb.js"></script>
+                <script data-no-cookie async src="https://cdn.splitbee.io/sb.js"></script>
             </head>
             <body>
                 <Navigation />
