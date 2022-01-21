@@ -94,12 +94,12 @@ app.use(async (context, next) => {
 // app.use(staticFiles('public'))
 
 
-router.get('/api', async context => {
-    const allProps = await getAllProps(NOTION_DATABASE_ID)
+// router.get('/api', async context => {
+//     const allProps = await getAllProps(NOTION_DATABASE_ID)
 
-    context.response.type = 'application/json'
-    context.response.body = JSON.stringify(allProps)
-})
+//     context.response.type = 'application/json'
+//     context.response.body = JSON.stringify(allProps)
+// })
 
 
 router.get('/api/:slug', async (context, next) => {
