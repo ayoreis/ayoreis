@@ -1,12 +1,15 @@
-# Hello, world! <br/> I am Ayo, <br/> I  make stuff.
+# Hello, world! <br/> I am [Ayo](//ayoreis.com), <br/> I  make stuff.
 
-- 🦕 [Deno](//deno.land) & [Deno Deploy](//deno.com/deploy)
-- 📘 [Typescript](//typescriptlang.org)
-- ⚛️ [React](//reactjs.org)
-    - 🗄️ [SSR](//reactjs.org/docs/react-dom-server.html)
-    - 🛣️ [Router](//reactrouter.com)
-    - 🪖 [Helmet](//github.com/nfl/react-helmet)
-- 🐿️ [Oak](//deno.land/x/oak)
+## 🧑‍💻 [ayoreis.com](//ayoreis.com) Tech stack:
+
+- [🦕 Deno](//deno.land) & [Deno Deploy](//deno.com/deploy)
+- [📘 Typescript](//typescriptlang.org)
+- [⚛️ React](//reactjs.org)
+    - [🗄️ SSR](//reactjs.org/docs/react-dom-server.html)
+    - [🛣️ Router](//reactrouter.com)
+    - [🪖 Helmet](//github.com/nfl/react-helmet)
+- [🐿️ Oak](//deno.land/x/oak)
+- [🐝 Splitbee](//splitbee.io)
 
 <!--
 
