@@ -85,21 +85,21 @@ try {
 
 // 🚀 Server
 
-app.use(async (context, next) => {
-    await next()
+// app.use(async (context, next) => {
+//     await next()
 
-    console.log(`${context.request.method} ${context.request.url.pathname}`)
-})
+//     console.log(`${context.request.method} ${context.request.url.pathname}`)
+// })
 
 // app.use(staticFiles('public'))
 
 
-// router.get('/api', async context => {
-//     const allProps = await getAllProps(NOTION_DATABASE_ID)
+router.get('/api', async context => {
+    const allProps = await getAllProps(NOTION_DATABASE_ID)
 
-//     context.response.type = 'application/json'
-//     context.response.body = JSON.stringify(allProps)
-// })
+    context.response.type = 'application/json'
+    context.response.body = JSON.stringify(allProps)
+})
 
 
 router.get('/api/:slug', async (context, next) => {
