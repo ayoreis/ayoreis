@@ -2,10 +2,11 @@
 
 // TODO: move imports to corsponding type sections
 
-import { Application, Router, Context, } from 'https://deno.land/x/oak@v10.1.0/mod.ts'
+import { Application, Router, Context, send, } from 'https://deno.land/x/oak@v10.1.0/mod.ts'
 import { React, ReactDOMServer, StaticRouter, } from './deps.ts'
 import { Status, STATUS_TEXT } from 'https://deno.land/std/http/http_status.ts'
-import staticFiles from 'https://deno.land/x/static_files@1.1.4/mod.ts'
+import { serveFile } from 'https://deno.land/std@0.122.0/http/file_server.ts'
+// import staticFiles from 'https://deno.land/x/static_files@1.1.4/mod.ts'
 import Document from './routes/doc.tsx'
 
 // Types
@@ -60,6 +61,15 @@ async function getBlocks(databaseID: ID, slug: string) {
     }
 }
 
+async function fileExists(path: string | URL) {
+    try {
+        const stats = await Deno.lstat(path)
+        return stats && stats.isFile
+    } catch (error) {
+        if (error && error instanceof Deno.errors.NotFound) return false
+        throw error
+    }
+}
 
 async function bundle(path: string | URL): Promise<string> {
 
@@ -74,9 +84,27 @@ async function bundle(path: string | URL): Promise<string> {
     return files[ 'deno:///bundle.js' ]
 }
 
+async function logger(context: Context, next: Function) {
+    await next()
+
+    console.log(`${context.request.method} ${context.request.url.pathname}`)
+}
+
+async function publicFiles(context: Context, next: Function) {
+    const path = context.request.url.pathname
+  
+    if (await fileExists(`./public${path}`)) {
+        await context.send({ 
+            root: './public',
+        })
+    } else {
+        await next()
+    }
+}
+
 
 // 📦 Bundle
-// In a try-catch block to prevent the Deno Deploy from crashing
+// In a try-catch block to prevent Deno Deploy from crashing
 
 try {
     Deno.writeTextFile('./public/script.js', await bundle('./public/script.tsx'))
@@ -85,13 +113,8 @@ try {
 
 // 🚀 Server
 
-app.use(async (context, next) => {
-    await next()
-
-    console.log(`${context.request.method} ${context.request.url.pathname}`)
-})
-
-app.use(staticFiles('public'))
+app.use(logger)
+app.use(publicFiles)
 
 
 router.get('/api', async context => {
