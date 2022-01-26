@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { React, NotionRenderer, Link, useNavigate } from '../../deps.ts'
 
 function Media({ props, blocks }: any) {

@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { React } from '../deps.ts'
 
 function NotFound() {

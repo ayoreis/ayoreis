@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { React, NotionRenderer, Link, } from '../../deps.ts'
 
 function Article({ props, blocks }: any) {
