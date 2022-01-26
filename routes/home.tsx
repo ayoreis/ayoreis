@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { React, Link } from '../deps.ts'
 
 import Article from '../components/types/article.tsx'

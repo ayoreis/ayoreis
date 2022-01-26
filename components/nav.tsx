@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { React, NavLink, } from '../deps.ts'
 
 function Navigation() {

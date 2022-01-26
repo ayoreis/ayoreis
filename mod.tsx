@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 // 📥 Imports
 
 // TODO: move imports to corsponding type sections

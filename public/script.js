@@ -10305,6 +10305,7 @@ function Document() {
         rel: "stylesheet",
         href: "/styles.css"
     }), Me.createElement("script", {
+        "data-no-cookie": true,
         async: true,
         src: "https://cdn.splitbee.io/sb.js"
     })), Me.createElement("body", null, Me.createElement(Navigation, null), Me.createElement("main", null, Me.createElement(Pe2, null, Me.createElement(A1, {

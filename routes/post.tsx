@@ -1,3 +1,8 @@
+/*
+    @jsx React.createElement
+    @jsxFrag React.Fragment
+*/
+
 import { Link, React, useParams } from '../deps.ts'
 
 import { NotionRenderer } from 'https://cdn.skypack.dev/react-notion'
