@@ -178,8 +178,8 @@ header.main {
     border-radius: var(--radius-2);
 }
 
-.post__content {
-    
+.post__content [class^="notion"] + [class^="notion"] {
+    margin-top: 1em;
 }
 
 .post__footer {

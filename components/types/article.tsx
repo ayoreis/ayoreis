@@ -15,7 +15,7 @@ function Article({ props, blocks }: any) {
                     && <img className="post__media" src={props.media} alt={props.mediaAlt}/>
                 }
 
-                <time className="post__date" dateTime={props.date}>02 August 2022</time>
+                <time className="post__date" dateTime={props.date}>{props.date}</time>
 
                 <h3 className="post__name">
                     {
