@@ -1,6 +1,6 @@
-# Hello, world! <br/> I am [Ayo](//ayoreis.com), <br/> I  make stuff.
+# 👋 Hello, 🌍 world! <br/> I am [Ayo](//ayoreis.com), <br/> I make stuff.
 
-## 🧑‍💻 [ayoreis.com](//ayoreis.com) Tech stack:
+<!--
 
 - [🦕 Deno](//deno.land) & [Deno Deploy](//deno.com/deploy)
 - [📘 Typescript](//typescriptlang.org)
@@ -10,8 +10,6 @@
     - [🪖 Helmet](//github.com/nfl/react-helmet)
 - [🐿️ Oak](//deno.land/x/oak)
 - [🐝 Splitbee](//splitbee.io)
-
-<!--
 
 **ayoreis/ayoreis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
