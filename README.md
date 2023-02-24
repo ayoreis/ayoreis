@@ -1,14 +1,7 @@
-<div align="center">
 <h1>
-
-```
-👋 Hello, 🌍 world! ~~~~~~
-I'm Ayo, ~~~~~~~~~~~~~~~~~~
-I make/do stuff/things. ~~~
-```
+  
+👋 Hello, 🌍 world! <br/>
+I'm Ayo, <br/>
+I make/do stuff/things.
 
 </h1>
-
-[ayoreis.com < Website](//ayoreis.com) ~
-[@ayo.reis < Instagram](//instagram.com/ayo.reis)
-</div>
